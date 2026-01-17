@@ -6,7 +6,9 @@ Transforms the standard `AGENTS.md` approach into a structured `.claude/` folder
 
 ## Claude setup structure
 
-(excludes the actual agent code, the opensourced "Playwright Scraper")
+This setup is based on the [Crawlee + Playwright + Chrome](https://github.com/apify/actor-templates/tree/master/templates/ts-crawlee-playwright-chrome) template, where the original [`AGENTS.md`](https://github.com/apify/actor-templates/blob/master/templates/ts-crawlee-playwright-chrome/AGENTS.md) file is transformed into a specialized Claude Code setup.
+
+The structure below excludes the actual actor code (the open-sourced "Playwright Scraper"):
 
 ```
 .claude/
