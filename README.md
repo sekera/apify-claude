@@ -1,10 +1,12 @@
-# apify-claude
+# Claude Code setup for Apify actors development
 
 Claude Code configuration for Apify actor development.
 
 Transforms the standard `AGENTS.md` approach into a structured `.claude/` folder setup with separated concerns.
 
-## Structure
+## Claude setup structure
+
+(excludes the actual agent code, the opensourced "Playwright Scraper")
 
 ```
 .claude/
