@@ -39,6 +39,12 @@ AGENTS.md                      # Original Apify development guide
 CLAUDE.md                      # Project-level Claude Code config
 ```
 
+## How do I get it working?
+
+1. Create a `.env` file with `APIFY_TOKEN` filled in. Use [`.env.template`](.env.template) as a template.
+2. Create an actor in the [Apify console](https://console.apify.com/) and configure it in [`.actor/actor.json`](.actor/actor.json).
+3. Start Claude Code and run the `/deploy-and-get-working` slash command. It will push the code to the Apify platform and compile it.
+
 ## Related
 
 - [Claude Code documentation](https://code.claude.com/docs/en/)
