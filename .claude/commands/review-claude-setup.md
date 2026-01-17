@@ -55,10 +55,20 @@ Check `.claude/settings.json`:
 For each `.claude/commands/*.md`:
 - Has valid YAML frontmatter with `---` delimiters
 - `description` field is present and concise
-- `allowed-tools` uses valid tool names
+- `allowed-tools` validation:
+  - Optional in general, but **mandatory** if command uses `!` bash execution syntax
+  - Uses valid tool names (see reference below)
+  - Uses fine-grained Bash patterns like `Bash(git:*)` instead of `Bash(*)`
 - No placeholder text in instructions
 - Clear step-by-step instructions
 - No references to non-existent files or commands
+
+Available frontmatter fields:
+- `allowed-tools` - Tools the command can use (inherits from conversation if omitted)
+- `description` - Brief command description
+- `argument-hint` - Hint for arguments (e.g., `[message]`)
+- `model` - Specific model to use
+- `context` - Set to `fork` for isolated execution
 
 ### 6. Clutter & Cleanup
 
@@ -72,10 +82,14 @@ For each `.claude/commands/*.md`:
 
 ```
 Read, Write, Edit, Glob, Grep, Bash, WebFetch, WebSearch, Task, TodoWrite,
-AskUserQuestion, NotebookEdit, Skill, mcp__*
+AskUserQuestion, NotebookEdit, Skill, KillShell, EnterPlanMode, ExitPlanMode, mcp__*
 ```
 
-Bash patterns: `Bash(npm:*)`, `Bash(git:*)`, `Bash(apify:*)`, etc.
+Bash pattern examples:
+- `Bash(git:*)` - all git commands
+- `Bash(npm:*)` - all npm commands
+- `Bash(apify:*)` - all apify CLI commands
+- `Bash(cat:*)`, `Bash(ls:*)` - specific commands
 
 ## Output
 
