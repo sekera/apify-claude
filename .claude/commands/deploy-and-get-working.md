@@ -1,11 +1,11 @@
 ---
-description: Push to Apify directly, wait for build, and fix errors until build succeeds
+description: Deploy to Apify, wait for build, and fix errors until build succeeds (iterative loop)
 allowed-tools: Bash(*), Read(*), Edit(*), Write(*), Glob(*), Grep(*), Skill(*)
 ---
 
-# Push and Get Working
+# Deploy and Get Working
 
-Automated workflow to push code directly to Apify platform, wait for build, and fix any build errors until the build succeeds.
+Automated workflow to deploy code to Apify platform, wait for build, and fix any build errors until the build succeeds. For simple one-shot deploy, use `/deploy` instead.
 
 ## Pre-flight Checks (REQUIRED)
 
@@ -41,7 +41,23 @@ If `apify info` shows the actor source is "Git repository":
 
 1. **STOP and ask the user**: "This actor is currently linked to a Git repository. Running `apify push` will break Git integration and switch to Web IDE source. Do you want to proceed?"
 2. Only continue if the user explicitly confirms
-3. If user declines, suggest using `/commit-and-get-working` instead
+3. If user declines, suggest using `/commit` instead
+
+### 4. Check for Uncommitted Changes
+
+```bash
+git status
+```
+
+If there are uncommitted changes, inform the user. They may want to commit first.
+
+### 5. Run Tests (if available)
+
+```bash
+npm test
+```
+
+If tests fail, fix them before proceeding.
 
 ## Workflow
 
