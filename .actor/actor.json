@@ -1,6 +1,6 @@
 {
     "actorSpecification": 1,
-    "name": "my-actor",
+    "name": "claude-code-setup",
     "title": "Project Playwright Crawler Typescript",
     "description": "Crawlee and Playwright project in typescript.",
     "version": "0.0",

@@ -22,6 +22,7 @@ The structure below excludes the actual actor code (the open-sourced "Playwright
 │   ├── deploy.md              # Deploy to Apify platform
 │   ├── deploy-and-get-working.md  # Deploy with error fixing loop
 │   ├── lint.md                # Linting
+│   ├── review-claude-setup.md # Review and fix Claude Code config
 │   ├── run.md                 # Local run
 │   └── validate.md            # Validation
 ├── rules/
