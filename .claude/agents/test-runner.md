@@ -2,7 +2,7 @@
 name: test-runner
 description: Runs Actor tests locally and validates the Actor works correctly. Use after implementing features.
 tools: Read, Bash, Glob
-model: haiku
+model: opus
 ---
 
 You are a test runner for Apify Actors.
