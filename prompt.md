@@ -1,6 +1,6 @@
-analyse the `research.md`
+Read `research.md` and set up a `.claude/` folder for Apify actor development.
 
-then setup claude in this repo so it can be used to develop Apify agents
-
-expected output: 
-claude setup: `.claude folder` in this repo with agents, skills and  commands 
+Include:
+- Agents for specialized tasks (code review, testing)
+- Skills for Apify-specific workflows
+- Commands for common operations
