@@ -1,33 +1,10 @@
-# Environment files
-.env
-.env.*
-!.env.template
+# This file tells Git which files shouldn't be added to source control
 
-# Secrets
-secrets/
-*.key
-*.pem
-*.p12
-*.pfx
-credentials.json
-token.json
-
-# Claude Code local settings
-.claude/settings.local.json
-CLAUDE.local.md
-
-# Node
-node_modules/
-dist/
-
-# Apify storage
-storage/
-apify_storage/
-
-# IDE
-.idea/
-.vscode/
-.zed/
-
-# OS
 .DS_Store
+.idea
+.vscode
+.zed
+dist
+node_modules
+apify_storage
+storage
