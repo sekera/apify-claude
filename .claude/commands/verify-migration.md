@@ -5,6 +5,8 @@ description: Verify all content from original AGENTS.md is migrated to Claude Co
 
 # Verify AGENTS.md Migration
 
+**Auto-fix all missing content - don't just report.**
+
 Compare the original `docs/original-AGENTS.md` file against the current Claude Code structure to ensure all information has been properly migrated.
 
 ## Source and Targets

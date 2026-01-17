@@ -5,6 +5,8 @@ description: Review and fix Claude Code configuration issues
 
 # Review Claude Code Setup
 
+**Auto-fix all issues - don't just report.**
+
 Comprehensive review of Claude Code configuration files for this project. Auto-fixes issues and reports changes.
 
 ## Documentation Sources
