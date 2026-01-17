@@ -34,7 +34,3 @@ npm run lint           # Lint code
 - ALWAYS implement readiness probe for standby Actors
 - NEVER use `Dataset.getInfo()` for final counts on Cloud
 - NEVER use deprecated `additionalHttpHeaders` - use `preNavigationHooks`
-
-## Project Structure
-
-See @AGENTS.md for complete Actor development guide.
