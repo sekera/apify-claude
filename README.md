@@ -24,7 +24,8 @@ The structure below excludes the actual actor code (the open-sourced "Playwright
 │   ├── lint.md                # Linting
 │   ├── review-claude-setup.md # Review and fix Claude Code config
 │   ├── run.md                 # Local run
-│   └── validate.md            # Validation
+│   ├── validate.md            # Validation
+│   └── verify-migration.md    # Verify AGENTS.md migration
 ├── rules/
 │   └── apify-patterns.md      # Apify-specific patterns
 ├── skills/
